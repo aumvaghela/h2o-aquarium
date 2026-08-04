@@ -1,7 +1,5 @@
 import { ImageResponse } from 'next/og';
  
-export const runtime = 'edge';
- 
 export const alt = 'H2O Aquarium & Pets';
 export const size = {
   width: 1200,
