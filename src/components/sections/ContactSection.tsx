@@ -12,7 +12,7 @@ export function ContactSection() {
         <div className="bg-white rounded-sm elementor-shadow overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             
-            <div className="p-10 lg:p-16">
+            <div className="p-6 sm:p-10 lg:p-16">
               <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">
                 Get In Touch
               </span>

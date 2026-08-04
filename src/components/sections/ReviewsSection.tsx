@@ -90,7 +90,7 @@ export function ReviewsSection() {
           {duplicatedReviews.map((review, idx) => (
             <div
               key={idx}
-              className="w-[350px] lg:w-[450px] shrink-0 bg-white p-6 md:p-8 mx-4 rounded-sm elementor-shadow group border-t-4 border-transparent hover:border-accent-green transition-colors duration-300 flex flex-col h-full"
+              className="w-[300px] sm:w-[350px] lg:w-[450px] shrink-0 bg-white p-6 md:p-8 mx-4 rounded-sm elementor-shadow group border-t-4 border-transparent hover:border-accent-green transition-colors duration-300 flex flex-col h-full"
             >
               <div className="flex items-center justify-between mb-6">
                 <div className="flex text-[#FFB800]">
@@ -125,7 +125,7 @@ export function ReviewsSection() {
           {duplicatedReviews.map((review, idx) => (
             <div
               key={idx + 100}
-              className="w-[350px] lg:w-[450px] shrink-0 bg-[#112240] p-6 md:p-8 mx-4 rounded-sm elementor-shadow group border-t-4 border-transparent hover:border-accent-green transition-colors duration-300 flex flex-col h-full"
+              className="w-[300px] sm:w-[350px] lg:w-[450px] shrink-0 bg-[#112240] p-6 md:p-8 mx-4 rounded-sm elementor-shadow group border-t-4 border-transparent hover:border-accent-green transition-colors duration-300 flex flex-col h-full"
             >
               <div className="flex items-center justify-between mb-6">
                 <div className="flex text-[#FFB800]">
