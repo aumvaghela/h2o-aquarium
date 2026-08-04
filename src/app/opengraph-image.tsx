@@ -27,7 +27,6 @@ export default async function Image() {
           justifyContent: 'center',
           fontFamily: 'sans-serif',
           color: '#112240',
-          padding: '60px',
         }}
       >
         <div
@@ -36,28 +35,24 @@ export default async function Image() {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            border: '8px solid #7ABF50',
-            borderRadius: '32px',
-            padding: '60px 80px',
-            background: '#fafafa',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
             width: '100%',
             height: '100%',
+            padding: '40px',
+            position: 'relative'
           }}
         >
+          {/* Logo */}
           <img
             src={logoData as any}
             alt="H2O Aquarium Logo"
-            width="250"
-            height="250"
-            style={{ marginBottom: '20px' }}
+            style={{ width: '300px', height: '300px', objectFit: 'contain', marginBottom: '20px' }}
           />
           
           <h2
             style={{
               fontSize: '48px',
               fontWeight: 'bold',
-              color: '#7ABF50',
+              color: '#112240',
               margin: '0 0 40px 0',
               textAlign: 'center',
             }}
@@ -68,19 +63,16 @@ export default async function Image() {
           <div
             style={{
               display: 'flex',
-              gap: '24px',
-              marginTop: '10px',
+              gap: '30px',
             }}
           >
             <div
               style={{
                 background: '#7ABF50',
-                padding: '16px 32px',
+                padding: '12px 32px',
                 borderRadius: '100px',
-                fontSize: '24px',
+                fontSize: '28px',
                 fontWeight: 'bold',
-                display: 'flex',
-                alignItems: 'center',
                 color: 'white',
               }}
             >
@@ -89,12 +81,10 @@ export default async function Image() {
             <div
               style={{
                 background: '#7ABF50',
-                padding: '16px 32px',
+                padding: '12px 32px',
                 borderRadius: '100px',
-                fontSize: '24px',
+                fontSize: '28px',
                 fontWeight: 'bold',
-                display: 'flex',
-                alignItems: 'center',
                 color: 'white',
               }}
             >
@@ -103,32 +93,28 @@ export default async function Image() {
             <div
               style={{
                 background: '#7ABF50',
-                padding: '16px 32px',
+                padding: '12px 32px',
                 borderRadius: '100px',
-                fontSize: '24px',
+                fontSize: '28px',
                 fontWeight: 'bold',
-                display: 'flex',
-                alignItems: 'center',
                 color: 'white',
               }}
             >
               Premium Supplies
             </div>
           </div>
-        </div>
-
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '40px',
-            display: 'flex',
-            alignItems: 'center',
-            color: '#64748b',
-            fontSize: '24px',
-            fontWeight: 'bold'
-          }}
-        >
-          <span>GF 17, S Square complex, Subhanpura Rd, Vadodara</span>
+          
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '30px',
+              color: '#64748b',
+              fontSize: '24px',
+              fontWeight: 'bold'
+            }}
+          >
+            GF 17, S Square complex, Subhanpura Rd, Vadodara
+          </div>
         </div>
       </div>
     ),
