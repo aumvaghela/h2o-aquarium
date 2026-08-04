@@ -20,8 +20,8 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="container mx-auto px-6 lg:px-12 relative z-10 w-full flex flex-col pt-32 pb-48 lg:pb-32">
-        <div className="max-w-2xl">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10 w-full flex flex-col xl:flex-row xl:items-end justify-between pt-32 pb-24 lg:pb-32 gap-12 xl:gap-8">
+        <div className="max-w-2xl shrink-0">
           <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">
             Premium Aquarium Store
           </span>
@@ -48,30 +48,30 @@ export function HeroSection() {
             </a>
           </div>
         </div>
-      </div>
 
-      {/* Aquavist-style Floating Boxes */}
-      <div className="absolute bottom-8 lg:bottom-12 right-0 lg:right-12 z-20 hidden md:flex flex-row gap-4 px-6 w-full md:w-auto">
-        <div className="bg-[#112240]/95 backdrop-blur-md p-6 lg:p-10 w-full md:w-[320px] rounded-sm elementor-shadow border-t-4 border-accent-green group hover:-translate-y-2 transition-transform duration-300">
-          <Waves className="w-10 h-10 text-accent-green mb-6" />
-          <h3 className="text-xl font-bold text-white mb-3 heading-font">Aquarium Design</h3>
-          <p className="text-gray-400 text-sm font-medium leading-relaxed mb-6">
-            Bespoke planted tanks and architectural glasswork designed for your space.
-          </p>
-          <a href="#services" className="text-accent-green font-bold text-sm flex items-center gap-2 group-hover:text-white transition-colors">
-            Learn More <ArrowRight size={16} />
-          </a>
-        </div>
-        
-        <div className="bg-[#112240]/95 backdrop-blur-md p-6 lg:p-10 w-full md:w-[320px] rounded-sm elementor-shadow border-t-4 border-accent-green group hover:-translate-y-2 transition-transform duration-300">
-          <ShieldCheck className="w-10 h-10 text-accent-green mb-6" />
-          <h3 className="text-xl font-bold text-white mb-3 heading-font">Complete Fishes</h3>
-          <p className="text-gray-400 text-sm font-medium leading-relaxed mb-6">
-            Healthy, quarantined freshwater species from Arowanas to Neon Tetras.
-          </p>
-          <a href="#fishes" className="text-accent-green font-bold text-sm flex items-center gap-2 group-hover:text-white transition-colors">
-            Learn More <ArrowRight size={16} />
-          </a>
+        {/* Aquavist-style Floating Boxes */}
+        <div className="hidden md:flex flex-row gap-4 w-full xl:w-auto justify-start xl:justify-end xl:-mb-12">
+          <div className="bg-[#112240]/95 backdrop-blur-md p-6 lg:p-10 w-full md:w-[320px] rounded-sm elementor-shadow border-t-4 border-accent-green group hover:-translate-y-2 transition-transform duration-300">
+            <Waves className="w-10 h-10 text-accent-green mb-6" />
+            <h3 className="text-xl font-bold text-white mb-3 heading-font">Aquarium Design</h3>
+            <p className="text-gray-400 text-sm font-medium leading-relaxed mb-6">
+              Bespoke planted tanks and architectural glasswork designed for your space.
+            </p>
+            <a href="#services" className="text-accent-green font-bold text-sm flex items-center gap-2 group-hover:text-white transition-colors">
+              Learn More <ArrowRight size={16} />
+            </a>
+          </div>
+          
+          <div className="bg-[#112240]/95 backdrop-blur-md p-6 lg:p-10 w-full md:w-[320px] rounded-sm elementor-shadow border-t-4 border-accent-green group hover:-translate-y-2 transition-transform duration-300">
+            <ShieldCheck className="w-10 h-10 text-accent-green mb-6" />
+            <h3 className="text-xl font-bold text-white mb-3 heading-font">Complete Fishes</h3>
+            <p className="text-gray-400 text-sm font-medium leading-relaxed mb-6">
+              Healthy, quarantined freshwater species from Arowanas to Neon Tetras.
+            </p>
+            <a href="#fishes" className="text-accent-green font-bold text-sm flex items-center gap-2 group-hover:text-white transition-colors">
+              Learn More <ArrowRight size={16} />
+            </a>
+          </div>
         </div>
       </div>
 
