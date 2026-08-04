@@ -11,7 +11,8 @@ export const contentType = 'image/png';
  
 export default async function Image() {
   const logoPath = path.join(process.cwd(), 'src', 'app', 'logo-og.png');
-  const logoData = await fs.readFile(logoPath);
+  const logoBuffer = await fs.readFile(logoPath);
+  const logoSrc = `data:image/png;base64,${logoBuffer.toString('base64')}`;
 
   return new ImageResponse(
     (
@@ -42,7 +43,7 @@ export default async function Image() {
         >
           {/* Logo */}
           <img
-            src={logoData as any}
+            src={logoSrc}
             alt="H2O Aquarium Logo"
             style={{ width: '300px', height: '300px', objectFit: 'contain', marginBottom: '20px' }}
           />
