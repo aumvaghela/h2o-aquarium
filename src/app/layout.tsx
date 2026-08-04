@@ -40,14 +40,6 @@ export const metadata: Metadata = {
     description: "Your Trusted Aquarium Store. Healthy ornamental fishes, planted setups, and expert guidance.",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "H2O Aquarium & Pet's",
-      },
-    ],
   },
   icons: {
     icon: '/icon.png?v=5',
@@ -56,7 +48,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "H2O Aquarium & Pet’s",
     description: "Your Trusted Aquarium Store. Healthy ornamental fishes, planted setups, and expert guidance.",
-    images: ["/og-image.png"],
   }
 };
 
