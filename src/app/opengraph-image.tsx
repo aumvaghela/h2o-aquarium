@@ -10,11 +10,15 @@ export const size = {
 export const contentType = 'image/png';
  
 export default async function Image() {
+  const logoData = await fetch(new URL('./logo-og.png', import.meta.url)).then(
+    (res) => res.arrayBuffer()
+  );
+
   return new ImageResponse(
     (
       <div
         style={{
-          background: 'linear-gradient(to bottom right, #001220, #112240)',
+          background: 'white',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -22,7 +26,7 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           fontFamily: 'sans-serif',
-          color: 'white',
+          color: '#112240',
           padding: '60px',
         }}
       >
@@ -32,56 +36,28 @@ export default async function Image() {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            border: '4px solid #6ee7b7',
-            borderRadius: '24px',
+            border: '8px solid #7ABF50',
+            borderRadius: '32px',
             padding: '60px 80px',
-            background: 'rgba(255, 255, 255, 0.05)',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
+            background: '#fafafa',
+            boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
+            width: '100%',
+            height: '100%',
           }}
         >
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              marginBottom: '30px',
-            }}
-          >
-            <div
-              style={{
-                width: '60px',
-                height: '60px',
-                borderRadius: '50%',
-                background: '#6ee7b7',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginRight: '20px',
-              }}
-            >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#001220" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M2 12h4l2-2 2 2h4" />
-                <path d="M2 16h4l2-2 2 2h4" />
-                <path d="M22 12c-2.76 0-5-2.24-5-5s2.24-5 5-5" />
-              </svg>
-            </div>
-            <h1
-              style={{
-                fontSize: '72px',
-                fontWeight: 'bold',
-                margin: 0,
-                color: 'white',
-                letterSpacing: '-2px',
-              }}
-            >
-              H2O Aquarium
-            </h1>
-          </div>
+          <img
+            src={logoData as any}
+            alt="H2O Aquarium Logo"
+            width="250"
+            height="250"
+            style={{ marginBottom: '20px' }}
+          />
           
           <h2
             style={{
-              fontSize: '36px',
-              fontWeight: 'normal',
-              color: '#6ee7b7',
+              fontSize: '48px',
+              fontWeight: 'bold',
+              color: '#7ABF50',
               margin: '0 0 40px 0',
               textAlign: 'center',
             }}
@@ -93,44 +69,47 @@ export default async function Image() {
             style={{
               display: 'flex',
               gap: '24px',
-              marginTop: '20px',
+              marginTop: '10px',
             }}
           >
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: '#7ABF50',
                 padding: '16px 32px',
                 borderRadius: '100px',
                 fontSize: '24px',
+                fontWeight: 'bold',
                 display: 'flex',
                 alignItems: 'center',
-                color: '#e2e8f0',
+                color: 'white',
               }}
             >
               Custom Aquascaping
             </div>
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: '#7ABF50',
                 padding: '16px 32px',
                 borderRadius: '100px',
                 fontSize: '24px',
+                fontWeight: 'bold',
                 display: 'flex',
                 alignItems: 'center',
-                color: '#e2e8f0',
+                color: 'white',
               }}
             >
               Exotic Fishes
             </div>
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.1)',
+                background: '#7ABF50',
                 padding: '16px 32px',
                 borderRadius: '100px',
                 fontSize: '24px',
+                fontWeight: 'bold',
                 display: 'flex',
                 alignItems: 'center',
-                color: '#e2e8f0',
+                color: 'white',
               }}
             >
               Premium Supplies
@@ -141,11 +120,12 @@ export default async function Image() {
         <div
           style={{
             position: 'absolute',
-            bottom: '50px',
+            bottom: '40px',
             display: 'flex',
             alignItems: 'center',
-            color: '#94a3b8',
+            color: '#64748b',
             fontSize: '24px',
+            fontWeight: 'bold'
           }}
         >
           <span>GF 17, S Square complex, Subhanpura Rd, Vadodara</span>
