@@ -1,4 +1,6 @@
 import { ImageResponse } from 'next/og';
+import fs from 'fs/promises';
+import path from 'path';
  
 export const alt = 'H2O Aquarium & Pets';
 export const size = {
@@ -8,9 +10,8 @@ export const size = {
 export const contentType = 'image/png';
  
 export default async function Image() {
-  const logoData = await fetch(new URL('./logo-og.png', import.meta.url)).then(
-    (res) => res.arrayBuffer()
-  );
+  const logoPath = path.join(process.cwd(), 'src', 'app', 'logo-og.png');
+  const logoData = await fs.readFile(logoPath);
 
   return new ImageResponse(
     (
