@@ -20,7 +20,11 @@ export function CtaBanner() {
             </div>
             <div>
               <span className="block text-sm text-gray-400 font-bold uppercase tracking-widest">Call Us Now</span>
-              <a href="tel:+919662533735" className="text-2xl font-bold heading-font hover:text-accent-green transition-colors">+91 96625 33735</a>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                <a href="tel:+919662676750" className="text-xl sm:text-2xl font-bold heading-font hover:text-accent-green transition-colors">+91 96626 76750</a>
+                <span className="hidden sm:block text-gray-600">|</span>
+                <a href="tel:+917405175021" className="text-xl sm:text-2xl font-bold heading-font hover:text-accent-green transition-colors">+91 74051 75021</a>
+              </div>
             </div>
           </div>
         </div>

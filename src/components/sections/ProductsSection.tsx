@@ -26,9 +26,9 @@ const CATEGORIES = [
 
 export function ProductsSection() {
   return (
-    <section className="py-16 lg:py-20 bg-white" id="products">
+    <section className="py-10 lg:py-12 bg-white" id="products">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
+        <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-24">
           <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">
             Premium Hardware
           </span>

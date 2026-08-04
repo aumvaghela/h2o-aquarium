@@ -25,12 +25,12 @@ export function HeroSection() {
           <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">
             Premium Aquarium Store
           </span>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 heading-font leading-[1.1]">
-            The Most Beautiful <br />
-            <span className="text-accent-green">Aquarium</span> In Anand
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 heading-font leading-[1.1]">
+            Turning Your Space Into <br />
+            <span className="text-accent-green">An Underwater Paradise</span>
           </h1>
           <p className="text-lg text-gray-300 mb-10 font-medium leading-relaxed max-w-xl body-font">
-            Vallabh Vidyanagar&apos;s definitive gallery for exotic freshwater livestock, custom aquascapes, and professional aquarium maintenance.
+            Vadodara&apos;s definitive gallery for exotic freshwater livestock, custom aquascapes, and professional aquarium setup and guidance.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">

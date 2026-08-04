@@ -9,6 +9,7 @@ import { PlantedAquarium } from '@/components/sections/PlantedAquarium';
 import { ProductsSection } from '@/components/sections/ProductsSection';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { ReviewsSection } from '@/components/sections/ReviewsSection';
+import { GallerySection } from '@/components/sections/GallerySection';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { Bubbles } from '@/components/ui/Bubbles';
 
@@ -16,24 +17,30 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'PetStore',
-    name: 'Rudra Aquarium',
+    name: 'H2O Aquarium & Pet’s',
+    alternateName: ['H2O Aquarium', 'H2O Aquarium Vadodara', 'H2O Aquarium and Pets Vadodara'],
     image: 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5',
-    '@id': 'https://rudra-aquarium.vercel.app',
-    url: 'https://rudra-aquarium.vercel.app',
-    telephone: '+919662533735',
-    email: 'jigarmachhi810@gmail.com',
+    '@id': 'https://aqualife-store.vercel.app',
+    url: 'https://aqualife-store.vercel.app',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '185'
+    },
+    telephone: ['+919662676750', '+917405175021'],
+    email: 'h2oaquariumandpets@gmail.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Bhaikaka Statue Garden, 691 Prakruti Bunglow, Beside O.B.C. Bank, Near Bhai Kaka Circle',
-      addressLocality: 'Vallabh Vidyanagar, Anand',
+      streetAddress: 'GF 17, S Square complex, Subhanpura Rd',
+      addressLocality: 'Vadodara',
       addressRegion: 'Gujarat',
-      postalCode: '388120',
+      postalCode: '390023',
       addressCountry: 'IN'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 22.5503487,
-      longitude: 72.9159939
+      latitude: 22.316870,
+      longitude: 73.167260
     },
     openingHoursSpecification: [{
       '@type': 'OpeningHoursSpecification',
@@ -46,8 +53,8 @@ export default function Home() {
         'Saturday',
         'Sunday'
       ],
-      opens: '10:00',
-      closes: '20:30'
+      opens: '11:00',
+      closes: '22:00'
     }]
   };
 
@@ -68,6 +75,7 @@ export default function Home() {
         <PlantedAquarium />
         <ProductsSection />
         <WhyChooseUs />
+        <GallerySection />
         <ReviewsSection />
         <ContactSection />
       </main>

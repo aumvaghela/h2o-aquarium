@@ -13,23 +13,41 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Rudra Aquarium | Premium Aquarium Store in Anand",
-  description: "Your Trusted Aquarium Store in Anand. We provide healthy ornamental fishes, planted aquarium setups, aquarium accessories, tanks, fish food, and professional guidance.",
-  keywords: ["Aquarium Shop in Anand", "Fish Shop in Anand", "Aquarium Store in Anand", "Aquarium Shop near Bhai Kaka Circle", "Aquarium Shop in Vallabh Vidyanagar", "Aquarium Fish Store Gujarat", "Aquarium Accessories Anand", "Aquarium Installation Anand", "Planted Aquarium Anand", "Fish Tank Shop Anand"],
-  metadataBase: new URL("https://rudra-aquarium.vercel.app"),
+  title: "H2O Aquarium & Pet's | Premium Aquarium Shop in Vadodara",
+  description: "Visit H2O Aquarium & Pet's in Vadodara for healthy ornamental fishes, planted aquarium setups, aquarium accessories, tanks, fish food, and professional aquascaping guidance.",
+  keywords: [
+    "H2O Aquarium", "H2O Aquarium Vadodara", "Aquarium Shop Vadodara", "Best Aquarium Store in Vadodara", 
+    "Fish Shop Vadodara", "Planted Aquarium Vadodara", "Aquarium Accessories Vadodara", "H2O Pets",
+    "Live Aquarium Fish Vadodara", "Custom Fish Tanks Vadodara", "Aquascaping Vadodara", 
+    "Exotic Fish Shop Vadodara", "Freshwater Fishes Vadodara", "Arowana Fish Vadodara", 
+    "Discus Fish Vadodara", "Aquarium Maintenance Services Vadodara", "Aquarium Soil and Plants", 
+    "Pet Store Subhanpura Vadodara", "H2O Aquarium Subhanpura", "Buy Aquarium Online Vadodara"
+  ],
+  metadataBase: new URL("https://aqualife-store.vercel.app"),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: "Rudra Aquarium | Premium Aquarium Store in Anand",
-    description: "Your Trusted Aquarium Store in Anand. Healthy ornamental fishes, planted setups, and expert guidance.",
-    locale: "en_IN",
+    title: "H2O Aquarium & Pet’s",
+    description: "Your Trusted Aquarium Store. Healthy ornamental fishes, planted setups, and expert guidance.",
+    locale: "en_US",
     type: "website",
   },
   icons: {
-    icon: '/icon.png?v=3',
+    icon: '/icon.png?v=5',
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rudra Aquarium | Premium Aquarium Store in Anand",
-    description: "Your Trusted Aquarium Store in Anand. Healthy ornamental fishes, planted setups, and expert guidance.",
+    title: "H2O Aquarium & Pet’s",
+    description: "Your Trusted Aquarium Store. Healthy ornamental fishes, planted setups, and expert guidance.",
   }
 };
 
@@ -48,7 +66,7 @@ export default function RootLayout({
         
         {/* Floating WhatsApp CTA */}
         <a 
-          href="https://wa.me/919662533735" 
+          href="https://wa.me/919662676750" 
           className="whatsapp-float" 
           target="_blank" 
           rel="noopener noreferrer"

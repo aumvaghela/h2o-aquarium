@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function AboutSection() {
   return (
-    <section className="py-16 lg:py-20 bg-white" id="about">
+    <section className="py-10 lg:py-12 bg-white" id="about">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           
@@ -14,7 +14,7 @@ export function AboutSection() {
               <span className="text-accent-green">Complete Aquarium</span>
             </h2>
             <p className="text-lg text-muted font-medium leading-relaxed mb-10 body-font">
-              Located in Vallabh Vidyanagar, Rudra Aquarium is the definitive destination for premium freshwater livestock and aquascaping design. We believe an aquarium is more than glass and water—it is a living piece of art.
+              Located in the heart of the city, H2O Aquarium & Pet’s is the definitive destination for premium freshwater livestock and aquascaping design. We believe an aquarium is more than glass and water—it is a living piece of art.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -40,8 +40,8 @@ export function AboutSection() {
             {/* Main Image */}
             <div className="absolute right-0 top-0 w-[80%] h-[90%] rounded-sm overflow-hidden elementor-shadow z-10">
               <Image 
-                src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?q=80&w=1200&auto=format&fit=crop" 
-                alt="Beautiful planted aquarium display" 
+                src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=1200&auto=format&fit=crop" 
+                alt="Beautiful freshwater aquarium fish" 
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -61,7 +61,7 @@ export function AboutSection() {
                   <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
                   <text className="text-[12px] font-bold fill-accent-green uppercase tracking-[0.2em] font-sans">
                     <textPath href="#circlePath" startOffset="0%">
-                      Rudra Aquarium • Premium Quality • 
+                      H2O Aquarium • Premium Quality • 
                     </textPath>
                   </text>
                 </svg>

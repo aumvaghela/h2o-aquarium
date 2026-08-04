@@ -10,7 +10,7 @@ const REASONS = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-16 lg:py-20 bg-accent-dark relative overflow-hidden" id="why-us">
+    <section className="py-10 lg:py-12 bg-accent-dark relative overflow-hidden" id="why-us">
       {/* Background accent */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-green/5 rounded-full blur-[120px]" />
 
@@ -19,10 +19,10 @@ export function WhyChooseUs() {
           
           <div className="max-w-xl lg:sticky lg:top-32">
             <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">
-              Why Rudra Aquarium
+              Why H2O Aquarium
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 heading-font">
-              The Rudra Standard.
+              The H2O Aquarium Standard.
             </h2>
             <p className="text-gray-300 font-medium leading-relaxed text-lg mb-10">
               We do not just sell fish. We partner with you to engineer and sustain beautiful, balanced aquatic ecosystems.

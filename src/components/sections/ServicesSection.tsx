@@ -4,23 +4,23 @@ import { Fish, Droplets, Wrench, Activity } from 'lucide-react';
 const SERVICES = [
   {
     icon: <Fish strokeWidth={2} className="w-12 h-12 text-white mb-6" />,
-    title: 'Livestock Shopping',
-    desc: 'Exclusive access to rare, healthy freshwater species.'
+    title: 'Aquarium Fish',
+    desc: 'All types of colorful and healthy freshwater fishes.'
   },
   {
     icon: <Droplets strokeWidth={2} className="w-12 h-12 text-white mb-6" />,
-    title: 'Aquatic Plants',
-    desc: 'Lush flora for nature aquariums and Iwagumi scapes.'
-  },
-  {
-    icon: <Activity strokeWidth={2} className="w-12 h-12 text-white mb-6" />,
-    title: 'Expert Maintenance',
-    desc: 'Professional care for pristine water clarity.'
+    title: 'Custom Aquariums',
+    desc: 'Customized & Imported Aquariums designed for your space.'
   },
   {
     icon: <Wrench strokeWidth={2} className="w-12 h-12 text-white mb-6" />,
-    title: 'Nano Aquariums',
-    desc: 'Custom glasswork and high-tech nano ecosystems.'
+    title: 'Aquarium Accessories',
+    desc: 'All aquarium accessories and high-quality fish food available.'
+  },
+  {
+    icon: <Activity strokeWidth={2} className="w-12 h-12 text-white mb-6" />,
+    title: 'Complete Setup',
+    desc: 'Complete aquarium setup & professional guidance.'
   },
 ];
 

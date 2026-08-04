@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import Image from 'next/image';
+import { Logo } from '@/components/ui/Logo';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const NAV_LINKS = [
@@ -47,13 +48,7 @@ export function Header() {
         <div className="flex items-center justify-between w-full">
           <Link href="#" className="flex items-center gap-3 z-50 group">
             <div className="transition-transform group-hover:scale-105">
-              <Image 
-                src={scrolled ? "/images/logo_dark.png" : "/images/logo_light.png"} 
-                alt="Rudra Aquarium Logo" 
-                width={200} 
-                height={60} 
-                className="object-contain h-[45px] lg:h-[55px] w-auto transition-opacity duration-300" 
-              />
+              <Logo dark={scrolled} className={scrolled ? "scale-90" : "scale-100"} />
             </div>
           </Link>
 
@@ -72,7 +67,7 @@ export function Header() {
             ))}
             <div className="flex items-center gap-6 ml-4 pl-6 border-l border-white/20">
               <a 
-                href="https://www.instagram.com/rudra_aquarium/" 
+                href="https://www.instagram.com/h2o_aquarium_vadodara" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`hover:scale-110 transition-transform hover:text-accent-green ${scrolled ? 'text-accent-dark' : 'text-white'}`}
@@ -85,7 +80,7 @@ export function Header() {
                 </svg>
               </a>
               <a 
-                href="https://wa.me/919662533735"
+                href="https://wa.me/919662676750"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={`px-6 py-2.5 font-bold text-sm uppercase tracking-wide rounded-full transition-all shadow-lg flex items-center gap-2 ${
@@ -125,13 +120,7 @@ export function Header() {
             {/* Mobile Header */}
             <div className="flex items-center justify-between p-6">
               <div className="transition-transform hover:scale-105">
-                <Image 
-                  src="/images/logo_light.png" 
-                  alt="Rudra Aquarium Logo" 
-                  width={200} 
-                  height={60} 
-                  className="object-contain h-[45px] w-auto" 
-                />
+                <Logo />
               </div>
               <button 
                 className="w-12 h-12 rounded-full flex items-center justify-center bg-white/10 text-white hover:bg-accent-green transition-colors"
@@ -169,18 +158,22 @@ export function Header() {
               className="p-8 bg-black/20 border-t border-white/10"
             >
               <div className="flex flex-col gap-4">
-                <a href="tel:+919662533735" className="flex items-center gap-3 text-gray-300 hover:text-white">
-                  <Phone size={18} className="text-accent-green" />
-                  <span className="font-bold tracking-widest">+91 96625 33735</span>
+                <a href="tel:+919662676750" className="flex items-center gap-3 text-gray-300 hover:text-white">
+                  <Phone size={18} className="text-accent-green shrink-0" />
+                  <span className="font-bold tracking-widest">+91 96626 76750</span>
+                </a>
+                <a href="tel:+917405175021" className="flex items-center gap-3 text-gray-300 hover:text-white">
+                  <Phone size={18} className="text-accent-green shrink-0 opacity-0" />
+                  <span className="font-bold tracking-widest">+91 74051 75021</span>
                 </a>
                 <div className="flex items-center gap-3 text-gray-300">
                   <MapPin size={18} className="text-accent-green" />
-                  <span className="font-medium text-sm">Vallabh Vidyanagar, Anand</span>
+                  <span className="font-medium text-sm">Vadodara, Gujarat</span>
                 </div>
                 <div className="w-full h-px bg-white/10 my-2" />
                 <div className="flex items-center gap-4">
                   <a 
-                    href="https://wa.me/919662533735" 
+                    href="https://wa.me/919662676750" 
                     target="_blank" rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
                     className="flex-1 bg-[#25D366] text-white py-3 px-6 rounded-full font-bold uppercase tracking-wide text-center text-sm shadow-lg shadow-[#25D366]/30 flex items-center justify-center gap-2"
@@ -190,7 +183,7 @@ export function Header() {
                     </svg>
                     WhatsApp
                   </a>
-                  <a href="https://www.instagram.com/rudra_aquarium/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-accent-green transition-colors shrink-0">
+                  <a href="https://www.instagram.com/h2o_aquarium_vadodara" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-accent-green transition-colors shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>

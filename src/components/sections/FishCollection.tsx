@@ -17,12 +17,12 @@ const FISH_COLLECTION = [
 
 export function FishCollection() {
   return (
-    <section className="py-16 lg:py-20 bg-background relative" id="fishes">
+    <section className="py-10 lg:py-12 bg-background relative" id="fishes">
       {/* Soft background shape */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent-green/10 rounded-full blur-[100px] -z-10" />
 
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
           <div className="max-w-2xl">
             <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">
               Our Collection
@@ -58,7 +58,7 @@ export function FishCollection() {
               <div className="p-6">
                 <h4 className="text-accent-dark font-bold text-lg mb-2 heading-font">{fish.name}</h4>
                 <a href="#contact" className="text-accent-green font-bold text-sm flex items-center gap-2">
-                  Check Price <ArrowRight size={14} />
+                  Inquire Now <ArrowRight size={14} />
                 </a>
               </div>
             </div>

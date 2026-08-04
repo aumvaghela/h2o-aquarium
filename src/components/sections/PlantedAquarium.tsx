@@ -9,7 +9,7 @@ const PLANTS = [
 
 export function PlantedAquarium() {
   return (
-    <section className="py-16 lg:py-20 bg-background relative" id="planted">
+    <section className="py-10 lg:py-12 bg-background relative" id="planted">
       
       {/* Background shape */}
       <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-accent-green/10 rounded-full blur-[100px] -translate-y-1/2 -z-10" />
