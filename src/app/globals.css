@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f9fa; /* Light grey background for contrast with white cards */
+  --foreground: #111827; 
+  --accent-green: #73b641; /* "Shrimp" template vibrant green */
+  --accent-dark: #1f2937; /* "Aquavist" dark teal/grey */
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent-green: var(--accent-green);
+  --color-accent-dark: var(--accent-dark);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dynamic Elementor-style Shadows */
+.elementor-shadow {
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.elementor-shadow:hover {
+  box-shadow: 0 20px 50px -10px rgba(0,0,0,0.25);
+  transform: translateY(-5px);
+}
+
+/* Overlapping Box Shadow */
+.overlap-box {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.heading-font {
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.body-font {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0px 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 25px rgba(37, 211, 102, 0.6);
+}
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; 
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 16px)); }
+}
+
+@keyframes scroll-reverse {
+  0% { transform: translateX(calc(-50% - 16px)); }
+  100% { transform: translateX(0); }
+}
