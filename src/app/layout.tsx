@@ -39,7 +39,15 @@ export const metadata: Metadata = {
     "Discus Fish Vadodara", "Flowerhorn Fish Vadodara", "Koi Fish Vadodara", "Tetra Fish Vadodara",
     
     // Services
-    "Aquarium Maintenance Services Vadodara", "Aquarium Cleaning Vadodara"
+    "Aquarium Maintenance Services Vadodara", "Aquarium Cleaning Vadodara",
+    
+    // Global & Broad Aquarium Hobby Terms
+    "Aquarium Shop", "Fish Store", "Buy Fish Tank", "Aquarium Decoration", 
+    "Aquatic Plants", "Aquascaping Rocks", "Aquarium Driftwood", "Spider Wood", "Seiryu Stone", "Dragon Stone",
+    "Aquarium LED Light", "WRGB Aquarium Light", "CO2 System for Aquarium", "Canister Filter",
+    "Hang on Back Filter", "Aquarium Heater", "Fish Medicine", "Water Conditioner", 
+    "Tropical Fish", "Cichlid Tank", "Nature Aquarium", "Iwagumi Aquascape", "Dutch Aquascape",
+    "Betta Fish", "Guppy Fish", "Oscar Fish", "Angelfish", "Goldfish Aquarium", "Fish Food", "Aquarium Gravel"
   ],
   metadataBase: new URL("https://aqualife-store.vercel.app"),
   robots: {
