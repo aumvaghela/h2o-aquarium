@@ -17,12 +17,29 @@ export const metadata: Metadata = {
   title: "H2O Aquarium & Pet's | Premium Aquarium Shop in Vadodara",
   description: "Visit H2O Aquarium & Pet's in Vadodara for healthy ornamental fishes, planted aquarium setups, aquarium accessories, tanks, fish food, and professional aquascaping guidance.",
   keywords: [
-    "H2O Aquarium", "H2O Aquarium Vadodara", "Aquarium Shop Vadodara", "Best Aquarium Store in Vadodara", 
-    "Fish Shop Vadodara", "Planted Aquarium Vadodara", "Aquarium Accessories Vadodara", "H2O Pets",
-    "Live Aquarium Fish Vadodara", "Custom Fish Tanks Vadodara", "Aquascaping Vadodara", 
+    // Core Brand & Location
+    "H2O Aquarium", "H2O Aquarium Vadodara", "H2O Pets", "H2O Aquarium Subhanpura", 
+    "Pet Store Subhanpura Vadodara",
+    
+    // High-Traffic Local Searches
+    "Aquarium Shop Vadodara", "Best Aquarium Store in Vadodara", "Fish Shop near me Vadodara", 
+    "Fish Aquarium Price in Vadodara", "Aquarium Fish Market Vadodara", "Where to buy aquarium fish in Vadodara",
+    "Best Pet Shop in Vadodara", "Buy Aquarium Online Vadodara",
+    
+    // Products & Setup
+    "Live Aquarium Fish Vadodara", "Custom Fish Tanks Vadodara", "Aquarium Accessories Vadodara", 
+    "Aquarium Filter and Pump Vadodara", "Aquarium Glass Tanks Vadodara", "Fish Tank Setup Vadodara",
+    
+    // Specialized Niches
+    "Planted Aquarium Vadodara", "Aquascaping Vadodara", "Aquascaping Plants Vadodara",
+    "Aquarium Soil and Plants", "Marine Aquarium Vadodara", 
+    
+    // Livestock Species
     "Exotic Fish Shop Vadodara", "Freshwater Fishes Vadodara", "Arowana Fish Vadodara", 
-    "Discus Fish Vadodara", "Aquarium Maintenance Services Vadodara", "Aquarium Soil and Plants", 
-    "Pet Store Subhanpura Vadodara", "H2O Aquarium Subhanpura", "Buy Aquarium Online Vadodara"
+    "Discus Fish Vadodara", "Flowerhorn Fish Vadodara", "Koi Fish Vadodara", "Tetra Fish Vadodara",
+    
+    // Services
+    "Aquarium Maintenance Services Vadodara", "Aquarium Cleaning Vadodara"
   ],
   metadataBase: new URL("https://aqualife-store.vercel.app"),
   robots: {
