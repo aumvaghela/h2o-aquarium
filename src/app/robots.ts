@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://aqualife-store.vercel.app/sitemap.xml',
+    sitemap: 'https://h2o-aquarium.vercel.app/sitemap.xml',
   }
 }

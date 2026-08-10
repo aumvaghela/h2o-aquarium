@@ -7,7 +7,7 @@ H2O Aquarium & Pet's is your definitive destination for premium freshwater lives
 - **Location**: GF 17, S Square complex, Subhanpura Rd, nr. Ganga Jamuna Hospital, Vadodara, Gujarat 390023, India
 - **Phone**: +91 96626 76750
 - **Email**: h2oaquariumandpets@gmail.com
-- **Website**: https://aqualife-store.vercel.app
+- **Website**: https://h2o-aquarium.vercel.app
 - **Google Maps**: https://maps.app.goo.gl/or1zdPQChx7vZrVt5
 
 ## Operating Hours

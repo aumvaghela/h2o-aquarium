@@ -20,8 +20,8 @@ export default function Home() {
     name: 'H2O Aquarium & Pet’s',
     alternateName: ['H2O Aquarium', 'H2O Aquarium Vadodara', 'H2O Aquarium and Pets Vadodara'],
     image: 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5',
-    '@id': 'https://aqualife-store.vercel.app',
-    url: 'https://aqualife-store.vercel.app',
+    '@id': 'https://h2o-aquarium.vercel.app',
+    url: 'https://h2o-aquarium.vercel.app',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',

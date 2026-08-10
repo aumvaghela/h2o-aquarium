@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     "Tropical Fish", "Cichlid Tank", "Nature Aquarium", "Iwagumi Aquascape", "Dutch Aquascape",
     "Betta Fish", "Guppy Fish", "Oscar Fish", "Angelfish", "Goldfish Aquarium", "Fish Food", "Aquarium Gravel"
   ],
-  metadataBase: new URL("https://aqualife-store.vercel.app"),
+  metadataBase: new URL("https://h2o-aquarium.vercel.app"),
   robots: {
     index: true,
     follow: true,
